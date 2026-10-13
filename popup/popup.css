@@ -1,0 +1,305 @@
+/* Burg Focus: popup (tokens and base in ../lib/ui.css) */
+
+body {
+  width: 340px;
+  padding: 3px 0 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px 10px;
+}
+header img {
+  width: 24px;
+  height: 24px;
+  flex: none;
+}
+header strong {
+  flex: 1;
+  font: 600 16px/1.1 var(--font-display);
+  letter-spacing: -.01em;
+}
+
+/* Status in the top right: off / focus / schedule / break */
+.pill {
+  font: 500 10.5px/1 var(--font-mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: 5px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+}
+.pill.on {
+  background: var(--t);
+  border-color: var(--t);
+  color: var(--on-t);
+  font-weight: 600;
+}
+.pill.break {
+  border-color: var(--break);
+  color: var(--break);
+  font-weight: 600;
+}
+.icon-btn {
+  width: 28px;
+  height: 28px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: none;
+  color: var(--fg);
+  font-size: 13px;
+  cursor: pointer;
+  transition: border-color .2s var(--ease);
+}
+.icon-btn:hover {
+  border-color: var(--fg);
+}
+
+/* Session card */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 12px;
+  margin: 0 14px 4px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-2);
+}
+.card input:not([type='checkbox']),
+.card select {
+  background: var(--bg);
+}
+
+/* Duration: segments */
+.durations {
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg);
+}
+.durations button {
+  flex: 1;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  color: var(--muted);
+  padding: 6px 0;
+  font: 500 12px/1.2 var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  transition: background .2s var(--ease), color .2s var(--ease);
+}
+.durations button:hover {
+  color: var(--fg);
+}
+.durations button[aria-checked='true'] {
+  background: var(--t);
+  color: var(--on-t);
+  font-weight: 600;
+}
+.wide {
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 15px;
+}
+
+/* Phase as a section label with a dot: lime during focus, orange (--break) during a break */
+.phase {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font: 500 10.5px/1.3 var(--font-mono);
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.phase::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--t);
+  flex: none;
+}
+.phase.break {
+  color: var(--break);
+  font-weight: 600;
+}
+.phase.break::before {
+  background: var(--break);
+}
+/* Timer: large key figure */
+.clock {
+  font: 700 52px/1 var(--font-display);
+  letter-spacing: -.02em;
+  font-variant-numeric: tabular-nums;
+  margin: 2px 0 -2px;
+}
+#session-meta {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+.session-note {
+  margin: 0;
+  padding: 7px 10px;
+  border-left: 3px solid var(--t);
+  background: var(--bg);
+  border-radius: 0 8px 8px 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.row .btn.primary {
+  font-size: 13px;
+}
+
+/* Blocks below the card */
+.block {
+  margin: 0 14px;
+  padding: 11px 0;
+  border-top: 1px solid var(--line);
+}
+.card + .block {
+  border-top: 0;
+}
+.block > .check + .small {
+  display: block;
+  margin: 3px 0 0 22px;
+}
+.friction {
+  margin-top: 8px;
+}
+
+.site-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.site {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font: 600 12.5px/1.3 var(--font-mono);
+}
+.small-btn {
+  padding: 4px 10px;
+  font-size: 11.5px;
+}
+#site-budget {
+  margin-top: 8px;
+}
+#site-budget .bar {
+  margin-bottom: 3px;
+}
+
+ul.plain {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+}
+ul.plain li {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 2px 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+ul.plain li .link {
+  font-family: var(--font-body);
+  margin-top: 4px;
+}
+
+.today-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+#today-total {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+ul.top {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+}
+ul.top li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3px 8px;
+  padding: 3px 0;
+}
+ul.top .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+ul.top .val {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+ul.top .bar {
+  grid-column: 1 / -1;
+  height: 6px;
+}
+
+/* Link to burgmedia.eu */
+.made-by {
+  margin: 0; padding: 8px 14px 10px; border-top: 1px solid var(--line);
+  font: 500 10.5px/1.3 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted);
+}
+.made-by a { color: var(--fg); text-decoration: none; border-bottom: 1px solid var(--t); }
+.made-by a:hover { border-bottom-width: 2px; }
+
+/* Guard */
+.guard-pick {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+}
+.guard-pick select {
+  flex: 1;
+}
+.guard-line {
+  border: 1px dashed var(--line);
+  background: var(--bg);
+  color: var(--muted);
+  border-radius: 10px;
+  padding: 6px 10px;
+  font: 500 11px/1.35 var(--font-mono);
+  text-align: left;
+  cursor: pointer;
+}
+.guard-line:hover {
+  border-color: var(--muted);
+}
+.guard-line.alert {
+  border: 1px solid var(--danger);
+  color: var(--danger);
+  font-weight: 600;
+}

@@ -1,0 +1,689 @@
+{
+  "lang": {
+    "message": "en"
+  },
+  "extName": {
+    "message": "Burg Focus"
+  },
+  "extDescription": {
+    "message": "Block distracting sites during focus sessions and on a schedule, with a daily time budget per site and statistics. All local."
+  },
+  "durSec": {
+    "message": "{0} s"
+  },
+  "durMin": {
+    "message": "{0} min"
+  },
+  "durHourMin": {
+    "message": "{0} h {1} min"
+  },
+  "durHours": {
+    "message": "{0} h"
+  },
+  "dayNames": {
+    "message": "Sun,Mon,Tue,Wed,Thu,Fri,Sat"
+  },
+  "defaultPhrase": {
+    "message": "I am choosing to be distracted"
+  },
+  "untilTime": {
+    "message": "until {0}"
+  },
+  "blockedTimes": {
+    "message": "{0}× blocked"
+  },
+  "today": {
+    "message": "Today"
+  },
+  "madeBy": {
+    "message": "Made by"
+  },
+  "frictionBreathe": {
+    "message": "Take a breath… {0} s to go"
+  },
+  "areYouSure": {
+    "message": "Are you sure?"
+  },
+  "typeOver": {
+    "message": "Type:"
+  },
+  "breakMsg": {
+    "message": "Time for a {0}-minute break. Distracting sites are open for now."
+  },
+  "breakMsgLong": {
+    "message": "Time for a long {0}-minute break. Distracting sites are open for now."
+  },
+  "roundDone": {
+    "message": "Round {0} done"
+  },
+  "breakOver": {
+    "message": "Break over"
+  },
+  "roundStarted": {
+    "message": "Round {0} ({1} minutes) has started."
+  },
+  "readyForRound": {
+    "message": "Ready for round {0}?"
+  },
+  "startNextRound": {
+    "message": "Start next round"
+  },
+  "badgeOn": {
+    "message": "on"
+  },
+  "guardName": {
+    "message": "Warden Gerrit"
+  },
+  "modeMild": {
+    "message": "Mild"
+  },
+  "modeStrict": {
+    "message": "Strict"
+  },
+  "modeCrazy": {
+    "message": "Crazy"
+  },
+  "guardOffCap": {
+    "message": "Off"
+  },
+  "guardTitleRollCall": {
+    "message": "{0}: roll call!"
+  },
+  "guardTitleCheck": {
+    "message": "{0}: check!"
+  },
+  "present": {
+    "message": "Present!"
+  },
+  "testLate": {
+    "message": "Too late! But this was a practice roll call, so no harm done this time."
+  },
+  "testOk": {
+    "message": "Practice roll call passed. That is how Gerrit likes it."
+  },
+  "penaltyAdded": {
+    "message": "Your round now lasts {0} minutes longer."
+  },
+  "nRollCalls1": {
+    "message": "{0} roll call"
+  },
+  "nRollCalls": {
+    "message": "{0} roll calls"
+  },
+  "nStrikes1": {
+    "message": "{0} penalty point"
+  },
+  "nStrikes": {
+    "message": "{0} penalty points"
+  },
+  "nEscapes1": {
+    "message": "{0} escape attempt"
+  },
+  "nEscapes": {
+    "message": "{0} escape attempts"
+  },
+  "verdictPerfect": {
+    "message": "Model behavior. Gerrit is almost proud."
+  },
+  "verdictQuiet": {
+    "message": "Quiet round. Suspiciously quiet."
+  },
+  "verdictSome": {
+    "message": "A few stains on your record. Do better next round."
+  },
+  "verdictBad": {
+    "message": "That wasn't a round, that was a jailbreak. Gerrit is disappointed."
+  },
+  "gAppel1": {
+    "message": "ROLL CALL! Prisoner {nr}, report in! I'm counting to {sec}."
+  },
+  "gAppel2": {
+    "message": "Knock knock. Gerrit here. Still working, or digging another tunnel?"
+  },
+  "gAppel3": {
+    "message": "I heard something. Was that a video? Prove you are working."
+  },
+  "gAppel4": {
+    "message": "Routine check! Hands on the keyboard, where I can see them!"
+  },
+  "gAppel5": {
+    "message": "Twenty-three years on the job and I've never seen anyone escape. You won't be the first. Present?"
+  },
+  "gAppel6": {
+    "message": "Gerrit here. I'm bored. Say something. Preferably something productive."
+  },
+  "gAppel7": {
+    "message": "They say I'm paranoid. They also say you're working. We'll see about that."
+  },
+  "gAppel8": {
+    "message": "Cell inspection! No excuses, no cat videos, no funny business."
+  },
+  "gIdle1": {
+    "message": "Prisoner {nr}! You haven't moved for {idle}. Escaped, or fell asleep?"
+  },
+  "gIdle2": {
+    "message": "It's quiet in here… TOO quiet. What are you up to?"
+  },
+  "gIdle3": {
+    "message": "No mouse. No keys. Just a suspiciously empty chair."
+  },
+  "gIdle4": {
+    "message": "If you're thinking, think a bit louder. I can't hear a thing."
+  },
+  "gIdle5": {
+    "message": "Just a little poke with my baton. Still alive, {nr}?"
+  },
+  "gOffsite1": {
+    "message": "What have you been doing on {host} for {min} minutes? That's not on today's schedule."
+  },
+  "gOffsite2": {
+    "message": "{host}? Interesting. That goes in your file. Unless you get back to work right now."
+  },
+  "gOffsite3": {
+    "message": "I know {host}. That's how it always starts. First {host}, then a tunnel under the showers."
+  },
+  "gOffsite4": {
+    "message": "Prisoner {nr}, {host} is not work. Even I know that, and I work here."
+  },
+  "gOk1": {
+    "message": "Hm. Fine. I've got my eye on you."
+  },
+  "gOk2": {
+    "message": "Noted. Carry on. And don't wink at me."
+  },
+  "gOk3": {
+    "message": "Very good. This time."
+  },
+  "gOk4": {
+    "message": "Excellent behavior. You might get an extra sandwich later."
+  },
+  "gOk5": {
+    "message": "Good. Gerrit is pleased. Gerrit is never pleased for long."
+  },
+  "gLate1": {
+    "message": "Too late! Penalty point. That goes in your file."
+  },
+  "gLate2": {
+    "message": "Didn't hear a thing, so that's a penalty point. Gerrit never forgets."
+  },
+  "gLate3": {
+    "message": "Looking away won't help. Penalty point number {strikes}."
+  },
+  "gLate4": {
+    "message": "Silence is an answer too. The wrong one. Penalty point."
+  },
+  "gWrong1": {
+    "message": "That's not your number. Again, and no tricks."
+  },
+  "gWrong2": {
+    "message": "Wrong! Don't you even know your own number?"
+  },
+  "gEscape1": {
+    "message": "Escape attempt noted, prisoner {nr}. Back to your cell."
+  },
+  "gEscape2": {
+    "message": "Ha! Thought I was asleep? Gerrit never sleeps."
+  },
+  "gEscape3": {
+    "message": "That door is locked. All the doors are locked. That's how a prison works."
+  },
+  "gEscape4": {
+    "message": "I saw that. I see everything. Back to work."
+  },
+  "gLawyer1": {
+    "message": "A lawyer? In here? Hahaha."
+  },
+  "gLawyer2": {
+    "message": "Raise your hand nicely if you want something."
+  },
+  "gLawyer3": {
+    "message": "That button does nothing. Just like you, apparently."
+  },
+  "guardPageTitle": {
+    "message": "Warden Gerrit · Burg Focus"
+  },
+  "prisoner": {
+    "message": "Prisoner"
+  },
+  "typePrisonerNr": {
+    "message": "Type your prisoner number:"
+  },
+  "lawyerBtn": {
+    "message": "I want a lawyer"
+  },
+  "close": {
+    "message": "Close"
+  },
+  "sorryGerrit": {
+    "message": "Sorry, Gerrit"
+  },
+  "guardPatrol": {
+    "message": "Gerrit is doing his rounds. Nothing going on… yet."
+  },
+  "guardCoffee": {
+    "message": "No round in progress. Gerrit is having coffee. Off you go."
+  },
+  "thisRound": {
+    "message": "This round: {0}"
+  },
+  "windowClosesIn": {
+    "message": "Window closes in {0} s"
+  },
+  "settingsAndStats": {
+    "message": "Settings and statistics"
+  },
+  "duration": {
+    "message": "Duration"
+  },
+  "notePlaceholder": {
+    "message": "What are you going to work on?"
+  },
+  "lockLabel": {
+    "message": "Lock: you can only turn it off once the round is over"
+  },
+  "guard": {
+    "message": "Guard"
+  },
+  "guardOff": {
+    "message": "off"
+  },
+  "guardOptMild": {
+    "message": "Warden Gerrit: mild"
+  },
+  "guardOptStrict": {
+    "message": "Warden Gerrit: strict"
+  },
+  "guardOptCrazy": {
+    "message": "Warden Gerrit: crazy"
+  },
+  "startFocus": {
+    "message": "Start focus"
+  },
+  "skipBreak": {
+    "message": "Skip break"
+  },
+  "stop": {
+    "message": "Stop"
+  },
+  "followSchedule": {
+    "message": "Follow schedule"
+  },
+  "tempOpen": {
+    "message": "Temporarily open"
+  },
+  "nothingMeasured": {
+    "message": "Nothing measured yet."
+  },
+  "allStats": {
+    "message": "All statistics →"
+  },
+  "pillBreak": {
+    "message": "break"
+  },
+  "pillFocus": {
+    "message": "focus"
+  },
+  "pillSchedule": {
+    "message": "schedule"
+  },
+  "pillOff": {
+    "message": "off"
+  },
+  "phaseFocus": {
+    "message": "Focus · round {0}"
+  },
+  "phaseBreak": {
+    "message": "Break"
+  },
+  "readyForRoundMin": {
+    "message": "Ready for round {0} ({1} minutes)?"
+  },
+  "lockOn": {
+    "message": "lock on"
+  },
+  "lockStopAfter": {
+    "message": "Lock is on: you can stop after {0}."
+  },
+  "guardCalling": {
+    "message": "{0} is calling you! Report in →"
+  },
+  "penaltyPerStrike": {
+    "message": "+{0} min per penalty point"
+  },
+  "noSchedule": {
+    "message": "No schedule set yet."
+  },
+  "focusTimeUntil": {
+    "message": "Focus time until {0}"
+  },
+  "nextFocusTime": {
+    "message": "Next focus time: {0} {1}"
+  },
+  "todayLower": {
+    "message": "today"
+  },
+  "siteAllowed": {
+    "message": "Allowed"
+  },
+  "siteAllow": {
+    "message": "Allow"
+  },
+  "siteListed": {
+    "message": "On the block list"
+  },
+  "siteBlock": {
+    "message": "Block"
+  },
+  "budgetUsed": {
+    "message": "Budget {0}: {1} of {2} min used"
+  },
+  "blockAgainNow": {
+    "message": "Block again now"
+  },
+  "stopSession": {
+    "message": "Stop session"
+  },
+  "turnOffSchedule": {
+    "message": "Turn off schedule"
+  },
+  "blockedPageTitle": {
+    "message": "Not now · Burg Focus"
+  },
+  "notNow": {
+    "message": "Not now"
+  },
+  "remaining": {
+    "message": "time left"
+  },
+  "freeAgainIn": {
+    "message": "open again in"
+  },
+  "noteLabel": {
+    "message": "What you were working on"
+  },
+  "back": {
+    "message": "← Back"
+  },
+  "goToSite": {
+    "message": "Continue to the site"
+  },
+  "anyway": {
+    "message": "Visit this site anyway"
+  },
+  "reasonSession": {
+    "message": "Your focus session is still running."
+  },
+  "reasonSchedule": {
+    "message": "According to your schedule, it's focus time now."
+  },
+  "reasonBudget": {
+    "message": "Your {0}-minute budget for {1} is used up for today."
+  },
+  "lockAnywayAfter": {
+    "message": "Lock is on: you can only continue after {0}."
+  },
+  "freeAgain": {
+    "message": "Open again"
+  },
+  "notBlocked": {
+    "message": "This site is no longer blocked."
+  },
+  "openFor": {
+    "message": "Open for {0} minutes"
+  },
+  "settings": {
+    "message": "Settings"
+  },
+  "stats": {
+    "message": "Statistics"
+  },
+  "saved": {
+    "message": "Saved"
+  },
+  "modeTitle": {
+    "message": "Mode during focus"
+  },
+  "modeBlock": {
+    "message": "Block these sites"
+  },
+  "modeBlockDesc": {
+    "message": ": everything on the block list is closed."
+  },
+  "modeAllow": {
+    "message": "Only allow these sites"
+  },
+  "modeAllowDesc": {
+    "message": " (deep work): everything except the allowed sites is closed."
+  },
+  "modeHelp1": {
+    "message": "Focus is on during a focus session and, when"
+  },
+  "modeHelp2": {
+    "message": "is on, within your schedule."
+  },
+  "and": {
+    "message": "and"
+  },
+  "or": {
+    "message": "or"
+  },
+  "modeHelp3": {
+    "message": "are always allowed."
+  },
+  "blocklist": {
+    "message": "Block list"
+  },
+  "blocklistHelp": {
+    "message": "A domain (including subdomains) or a path, for example"
+  },
+  "allowlistTitle": {
+    "message": "Allowed in \"only these sites\""
+  },
+  "allowlistHelp": {
+    "message": "Only used in the mode"
+  },
+  "workDomains": {
+    "message": "Work domains"
+  },
+  "workDomainsHelp": {
+    "message": "Always allowed, in both modes. For example your own sites, a client portal or your hosting panel."
+  },
+  "schedule": {
+    "message": "Schedule"
+  },
+  "addTimeSlot": {
+    "message": "+ Time slot"
+  },
+  "budgetsTitle": {
+    "message": "Time budget per site"
+  },
+  "budgetsHelp": {
+    "message": "Always active, also outside focus time. Only counts while the tab is in front and you are not idle (or the tab is playing sound). Once the budget is used up, the site stays closed until midnight."
+  },
+  "minPerDay": {
+    "message": "min per day"
+  },
+  "add": {
+    "message": "Add"
+  },
+  "frictionTitle": {
+    "message": "Hurdle before you go anyway"
+  },
+  "frictionHelp": {
+    "message": "Applies on the block page (\"visit this site anyway\"), when you stop a session and when you turn off the schedule during focus time."
+  },
+  "frictionNone": {
+    "message": "No hurdle"
+  },
+  "frictionWait": {
+    "message": "Wait:"
+  },
+  "seconds": {
+    "message": "seconds"
+  },
+  "frictionType": {
+    "message": "Retype a sentence:"
+  },
+  "graceBefore": {
+    "message": "After that the site is open for"
+  },
+  "graceAfter": {
+    "message": "minutes."
+  },
+  "lockHint1": {
+    "message": "If you really don't want to be able to give up, turn on the"
+  },
+  "lockWord": {
+    "message": "lock"
+  },
+  "lockHint2": {
+    "message": "when you start a session. Then stopping or continuing anyway is only possible once the round is over."
+  },
+  "focusSessions": {
+    "message": "Focus sessions"
+  },
+  "defaultDuration": {
+    "message": "Default duration"
+  },
+  "lockDefault": {
+    "message": "Lock on by default"
+  },
+  "shortBreak": {
+    "message": "Short break"
+  },
+  "minLongBreak": {
+    "message": "min, long break"
+  },
+  "minAfterEvery": {
+    "message": "min after every"
+  },
+  "rounds": {
+    "message": "rounds"
+  },
+  "autoNext": {
+    "message": "Automatically start a new round after the break"
+  },
+  "guardTitle": {
+    "message": "Guard: Warden Gerrit"
+  },
+  "guardHelp": {
+    "message": "During the focus phase of a session, Gerrit checks whether you are still at it. He calls you in a window of his own and with a notification; report in on time, or you get a penalty point. Working in another app (your editor) simply counts as being busy."
+  },
+  "guardOffDesc": {
+    "message": ": Gerrit has the day off."
+  },
+  "guardMildDesc": {
+    "message": ": only when you do nothing for 5 minutes. 90 seconds to report in."
+  },
+  "guardStrictDesc": {
+    "message": ": after 3 minutes idle, 10 minutes on a non-work site, and a roll call every 15 to 30 minutes. 60 seconds."
+  },
+  "guardCrazyDesc": {
+    "message": ": after 90 seconds idle, 5 minutes on a non-work site, and a roll call every 6 to 14 minutes. 30 seconds, and you have to type your prisoner number."
+  },
+  "guardNote1": {
+    "message": "\"Non-work site\" only works if you have filled in"
+  },
+  "workDomainsLower": {
+    "message": "work domains"
+  },
+  "guardNote2": {
+    "message": "above. A tab that plays sound does not count as idle. On the block page, Gerrit notes every escape attempt."
+  },
+  "guardSound": {
+    "message": "Whistle on a roll call"
+  },
+  "guardPenalty": {
+    "message": "Penalty minutes: every penalty point makes the round 2 minutes longer"
+  },
+  "testRollCall": {
+    "message": "Practice roll call"
+  },
+  "doesntCount": {
+    "message": "doesn't count"
+  },
+  "other": {
+    "message": "Other"
+  },
+  "tracking": {
+    "message": "Track time per site for the statistics (budgets are always measured)"
+  },
+  "noteOnBlockPage": {
+    "message": "Note on the block page when no session is running"
+  },
+  "notePh": {
+    "message": "E.g. finish the quote first"
+  },
+  "remove": {
+    "message": "Remove"
+  },
+  "empty": {
+    "message": "Empty"
+  },
+  "egBlock": {
+    "message": "e.g. youtube.com/shorts"
+  },
+  "egAllow": {
+    "message": "e.g. github.com"
+  },
+  "invalidDomain": {
+    "message": "Not a valid domain: {0}"
+  },
+  "to": {
+    "message": "to"
+  },
+  "todayUsed": {
+    "message": "today {0}"
+  },
+  "lockBanner": {
+    "message": "Lock is on until {0}. Until then you can only add sites to the block list."
+  },
+  "period": {
+    "message": "Period"
+  },
+  "days7": {
+    "message": "7 days"
+  },
+  "days30": {
+    "message": "30 days"
+  },
+  "days90": {
+    "message": "90 days"
+  },
+  "timeInBrowser": {
+    "message": "Time in the browser"
+  },
+  "avgPerDay": {
+    "message": "Average per day"
+  },
+  "blocked": {
+    "message": "Blocked"
+  },
+  "strikesCalls": {
+    "message": "Penalty points / roll calls (Gerrit)"
+  },
+  "timePerDay": {
+    "message": "Time per day"
+  },
+  "perSite": {
+    "message": "Per site"
+  },
+  "site": {
+    "message": "Site"
+  },
+  "time": {
+    "message": "Time"
+  },
+  "nothingInPeriod": {
+    "message": "Nothing measured in this period yet."
+  },
+  "statsFooter": {
+    "message": "Everything is stored only in this browser and is cleaned up after 90 days."
+  },
+  "clearStats": {
+    "message": "Clear statistics"
+  },
+  "confirmClear": {
+    "message": "Are you sure? Click again"
+  }
+}

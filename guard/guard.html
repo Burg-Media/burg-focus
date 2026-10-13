@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="guardPageTitle">Burg Focus</title>
+    <link rel="icon" href="../images/icon_32.png" />
+    <link rel="stylesheet" href="../lib/ui.css" />
+    <link rel="stylesheet" href="guard.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../images/icon_48.png" alt="" width="22" height="22" />
+      <strong data-i18n="guardName"></strong>
+      <span class="pill" id="mode"></span>
+      <span class="tag"><span data-i18n="prisoner"></span> <b id="prisoner">????</b></span>
+    </header>
+
+    <main>
+      <div class="bubble" id="bubble" aria-live="assertive"></div>
+
+      <svg class="gerrit" id="gerrit" viewBox="0 0 200 220" role="img" data-i18n-aria-label="guardName">
+        <!-- Uniform -->
+        <path class="uniform" d="M24 220 Q34 172 100 166 Q166 172 176 220Z" />
+        <path class="collar" d="M78 170 L100 196 L122 170" />
+        <circle class="star" cx="140" cy="198" r="7" />
+        <!-- Head -->
+        <circle class="skin" cx="48" cy="116" r="11" />
+        <circle class="skin" cx="152" cy="116" r="11" />
+        <ellipse class="skin" cx="100" cy="112" rx="52" ry="58" />
+        <!-- Cap -->
+        <path class="cap" d="M46 80 Q48 30 100 26 Q152 30 154 80Z" />
+        <rect class="band" x="46" y="64" width="108" height="14" />
+        <path class="cap" d="M38 82 Q100 100 162 82 L156 74 Q100 90 44 74Z" />
+        <path class="star" d="M100 36 l5 10 11 1.5 -8 7.5 2 11 -10 -5.5 -10 5.5 2 -11 -8 -7.5 11 -1.5Z" />
+        <!-- Eyebrows -->
+        <rect class="brow" id="brow-l" x="64" y="88" width="30" height="7" rx="3.5" />
+        <rect class="brow" id="brow-r" x="106" y="88" width="30" height="7" rx="3.5" />
+        <!-- Eyes -->
+        <g class="eye" id="eye-l"><circle class="white" cx="80" cy="108" r="11" /><circle class="pupil" id="pup-l" cx="80" cy="108" r="5" /></g>
+        <g class="eye" id="eye-r"><circle class="white" cx="120" cy="108" r="11" /><circle class="pupil" id="pup-r" cx="120" cy="108" r="5" /></g>
+        <!-- Cheeks (angry) -->
+        <ellipse class="cheek" cx="68" cy="134" rx="9" ry="5" />
+        <ellipse class="cheek" cx="132" cy="134" rx="9" ry="5" />
+        <!-- Nose -->
+        <path class="line" d="M100 114 Q90 130 99 135 Q106 136 105 129" />
+        <!-- Mouth -->
+        <ellipse class="mouth shout" cx="100" cy="158" rx="10" ry="9" />
+        <path class="mouth smile line" d="M86 154 Q100 168 114 154" />
+        <path class="mouth flat line" d="M88 158 L112 158" />
+        <!-- Mustache -->
+        <path class="stache" d="M100 141 C88 132 70 134 62 146 C58 152 50 150 50 143 C52 158 74 158 100 149 C126 158 148 158 150 143 C150 150 142 152 138 146 C130 134 112 132 100 141Z" />
+      </svg>
+
+      <section class="answer" id="answer" hidden>
+        <div class="timer"><strong id="seconds"></strong><div class="bar" id="timebar"><span></span></div></div>
+        <label class="code" id="code-box" hidden>
+          <span><span data-i18n="typePrisonerNr"></span> <b id="prisoner-hint"></b></span>
+          <input id="code" inputmode="numeric" autocomplete="off" maxlength="4" spellcheck="false" />
+        </label>
+        <div class="actions" id="actions">
+          <button class="btn primary big" id="present" type="button" data-i18n="present"></button>
+          <button class="btn lawyer" id="lawyer" type="button" data-i18n="lawyerBtn"></button>
+        </div>
+      </section>
+
+      <section class="after" id="after" hidden>
+        <button class="btn" id="close" type="button" data-i18n="close"></button>
+        <p class="muted small" id="autoclose"></p>
+      </section>
+
+      <p class="tally muted small" id="tally"></p>
+    </main>
+
+    <script src="../lib/i18n.js"></script>
+    <script src="../lib/store.js"></script>
+    <script src="../lib/guard.js"></script>
+    <script src="guard.js"></script>
+  </body>
+</html>

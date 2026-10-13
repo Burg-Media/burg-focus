@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Burg Focus</title>
+    <link rel="icon" href="../images/icon_32.png" />
+    <link rel="stylesheet" href="../lib/ui.css" />
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="brand">
+        <img src="../images/icon_48.png" alt="" width="32" height="32" />
+        <strong>Burg Focus</strong>
+      </div>
+      <nav role="tablist">
+        <button role="tab" data-tab="settings" aria-selected="true" data-i18n="settings"></button>
+        <button role="tab" data-tab="stats" data-i18n="stats"></button>
+      </nav>
+      <span class="saved muted small" id="saved" hidden data-i18n="saved"></span>
+    </header>
+
+    <main>
+      <div class="lock-banner" id="lock-banner" hidden></div>
+
+      <!-- Settings -->
+      <section id="tab-settings" class="pane">
+        <article class="panel">
+          <h2 data-i18n="modeTitle"></h2>
+          <label class="check"><input type="radio" name="mode" value="block" /> <span><strong data-i18n="modeBlock"></strong><span data-i18n="modeBlockDesc"></span></span></label>
+          <label class="check"><input type="radio" name="mode" value="allow" /> <span><strong data-i18n="modeAllow"></strong><span data-i18n="modeAllowDesc"></span></span></label>
+          <p class="muted small"><span data-i18n="modeHelp1"></span> <em data-i18n="followSchedule"></em> <span data-i18n="modeHelp2"></span> <code>localhost</code>, <code>127.0.0.1</code> <span data-i18n="and"></span> <code>*.test</code> / <code>*.local</code> <span data-i18n="modeHelp3"></span></p>
+        </article>
+
+        <article class="panel" data-list="blocklist">
+          <h2 data-i18n="blocklist"></h2>
+          <p class="muted small"><span data-i18n="blocklistHelp"></span> <code>youtube.com/shorts</code> <span data-i18n="or"></span> <code>instagram.com/reels</code>.</p>
+        </article>
+
+        <article class="panel" data-list="allowlist">
+          <h2 data-i18n="allowlistTitle"></h2>
+          <p class="muted small"><span data-i18n="allowlistHelp"></span> <em data-i18n="modeAllow"></em>.</p>
+        </article>
+
+        <article class="panel" data-list="workDomains">
+          <h2 data-i18n="workDomains"></h2>
+          <p class="muted small" data-i18n="workDomainsHelp"></p>
+        </article>
+
+        <article class="panel">
+          <h2 data-i18n="schedule"></h2>
+          <label class="check"><input type="checkbox" id="schedulesOn" /> <span data-i18n="followSchedule"></span></label>
+          <ul class="sched" id="schedules"></ul>
+          <button class="btn" id="add-schedule" type="button" data-i18n="addTimeSlot"></button>
+        </article>
+
+        <article class="panel">
+          <h2 data-i18n="budgetsTitle"></h2>
+          <p class="muted small" data-i18n="budgetsHelp"></p>
+          <ul class="budgets" id="budgets"></ul>
+          <form class="add-row" id="budget-form" autocomplete="off">
+            <input id="budget-domain" placeholder="youtube.com" required spellcheck="false" />
+            <input id="budget-minutes" type="number" min="0" max="1440" value="20" required />
+            <span class="muted" data-i18n="minPerDay"></span>
+            <button class="btn" type="submit" data-i18n="add"></button>
+          </form>
+        </article>
+
+        <article class="panel">
+          <h2 data-i18n="frictionTitle"></h2>
+          <p class="muted small" data-i18n="frictionHelp"></p>
+          <label class="check"><input type="radio" name="friction" value="none" /> <span data-i18n="frictionNone"></span></label>
+          <label class="check"><input type="radio" name="friction" value="wait" /> <span data-i18n="frictionWait"></span> <input type="number" id="waitSeconds" min="5" max="600" class="num" /> <span data-i18n="seconds"></span></label>
+          <label class="check"><input type="radio" name="friction" value="type" /> <span data-i18n="frictionType"></span></label>
+          <input id="phrase" class="wide" spellcheck="false" />
+          <label class="field"><span data-i18n="graceBefore"></span> <input type="number" id="graceMinutes" min="1" max="120" class="num" /> <span data-i18n="graceAfter"></span></label>
+          <p class="muted small"><span data-i18n="lockHint1"></span> <strong data-i18n="lockWord"></strong> <span data-i18n="lockHint2"></span></p>
+        </article>
+
+        <article class="panel">
+          <h2 data-i18n="focusSessions"></h2>
+          <label class="field"><span data-i18n="defaultDuration"></span>
+            <select id="sessionMinutes">
+              <option value="25">25 min</option>
+              <option value="50">50 min</option>
+              <option value="90">90 min</option>
+            </select>
+          </label>
+          <label class="check"><input type="checkbox" id="sessionLock" /> <span data-i18n="lockDefault"></span></label>
+          <label class="field"><span data-i18n="shortBreak"></span> <input type="number" id="shortBreak" min="1" max="60" class="num" /> <span data-i18n="minLongBreak"></span> <input type="number" id="longBreak" min="1" max="120" class="num" /> <span data-i18n="minAfterEvery"></span> <input type="number" id="longEvery" min="2" max="12" class="num" /> <span data-i18n="rounds"></span></label>
+          <label class="check"><input type="checkbox" id="autoNext" /> <span data-i18n="autoNext"></span></label>
+        </article>
+
+        <article class="panel">
+          <h2 data-i18n="guardTitle"></h2>
+          <p class="muted small" data-i18n="guardHelp"></p>
+          <label class="check"><input type="radio" name="guardMode" value="off" /> <span><strong data-i18n="guardOffCap"></strong><span data-i18n="guardOffDesc"></span></span></label>
+          <label class="check"><input type="radio" name="guardMode" value="mild" /> <span><strong data-i18n="modeMild"></strong><span data-i18n="guardMildDesc"></span></span></label>
+          <label class="check"><input type="radio" name="guardMode" value="streng" /> <span><strong data-i18n="modeStrict"></strong><span data-i18n="guardStrictDesc"></span></span></label>
+          <label class="check"><input type="radio" name="guardMode" value="gek" /> <span><strong data-i18n="modeCrazy"></strong><span data-i18n="guardCrazyDesc"></span></span></label>
+          <p class="muted small"><span data-i18n="guardNote1"></span> <em data-i18n="workDomainsLower"></em> <span data-i18n="guardNote2"></span></p>
+          <label class="check"><input type="checkbox" id="guardSound" /> <span data-i18n="guardSound"></span></label>
+          <label class="check"><input type="checkbox" id="guardPenalty" /> <span data-i18n="guardPenalty"></span></label>
+          <div><button class="btn" id="guard-test" type="button" data-i18n="testRollCall"></button> <span class="muted small" data-i18n="doesntCount"></span></div>
+        </article>
+
+        <article class="panel">
+          <h2 data-i18n="other"></h2>
+          <label class="check"><input type="checkbox" id="tracking" /> <span data-i18n="tracking"></span></label>
+          <label class="field block-field"><span data-i18n="noteOnBlockPage"></span>
+            <textarea id="note" rows="2" maxlength="300" data-i18n-placeholder="notePh"></textarea>
+          </label>
+        </article>
+      </section>
+
+      <!-- Statistics -->
+      <section id="tab-stats" class="pane" hidden>
+        <div class="stats-bar">
+          <div class="seg" id="period" role="radiogroup" data-i18n-aria-label="period">
+            <button type="button" data-days="1" data-i18n="today"></button>
+            <button type="button" data-days="7" aria-checked="true" data-i18n="days7"></button>
+            <button type="button" data-days="30" data-i18n="days30"></button>
+            <button type="button" data-days="90" data-i18n="days90"></button>
+          </div>
+        </div>
+
+        <div class="tiles">
+          <div class="tile"><span class="muted small" data-i18n="timeInBrowser"></span><strong id="t-total"></strong></div>
+          <div class="tile"><span class="muted small" data-i18n="avgPerDay"></span><strong id="t-avg"></strong></div>
+          <div class="tile"><span class="muted small" data-i18n="blocked"></span><strong id="t-blocks"></strong></div>
+          <div class="tile"><span class="muted small" data-i18n="strikesCalls"></span><strong id="t-strikes"></strong></div>
+        </div>
+
+        <article class="panel">
+          <h2 data-i18n="timePerDay"></h2>
+          <div class="chart" id="chart"></div>
+        </article>
+
+        <article class="panel">
+          <h2 data-i18n="perSite"></h2>
+          <table class="sites">
+            <thead>
+              <tr><th data-i18n="site"></th><th class="num-col" data-i18n="time"></th><th class="bar-cell"></th><th class="num-col" data-i18n="blocked"></th></tr>
+            </thead>
+            <tbody id="sites"></tbody>
+          </table>
+          <div class="muted" id="sites-empty" hidden data-i18n="nothingInPeriod"></div>
+        </article>
+
+        <p class="muted small"><span data-i18n="statsFooter"></span> <button class="link small" id="clear-stats" type="button" data-i18n="clearStats"></button></p>
+      </section>
+    </main>
+
+    <div class="tooltip" id="tooltip" hidden></div>
+
+    <script src="../lib/i18n.js"></script>
+    <script src="../lib/store.js"></script>
+    <script src="../lib/rules.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>

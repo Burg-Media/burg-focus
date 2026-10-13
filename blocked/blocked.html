@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="blockedPageTitle">Burg Focus</title>
+    <link rel="icon" href="../images/icon_32.png" />
+    <link rel="stylesheet" href="../lib/ui.css" />
+    <link rel="stylesheet" href="blocked.css" />
+  </head>
+  <body>
+    <main class="card">
+      <div class="brand">
+        <img src="../images/icon_128.png" alt="" width="32" height="32" />
+        <span>Burg Focus</span>
+      </div>
+      <h1 id="title" data-i18n="notNow"></h1>
+      <p class="host" id="host"></p>
+      <p class="reason" id="reason"></p>
+      <p class="guard-quip" id="guard-quip" hidden></p>
+
+      <div class="countdown" id="countdown-box" hidden>
+        <span class="muted" id="countdown-label" data-i18n="remaining"></span>
+        <strong id="countdown"></strong>
+        <span class="muted" id="countdown-until"></span>
+      </div>
+
+      <section class="note" id="note-box" hidden>
+        <span class="lbl" data-i18n="noteLabel"></span>
+        <p id="note"></p>
+      </section>
+
+      <div class="actions">
+        <button class="btn primary big" id="back" type="button" data-i18n="back"></button>
+        <button class="btn primary big" id="go" type="button" hidden data-i18n="goToSite"></button>
+      </div>
+
+      <div class="escape">
+        <button class="link" id="anyway" type="button" data-i18n="anyway"></button>
+        <p class="muted small" id="locked" hidden></p>
+        <div class="friction" id="friction" hidden></div>
+      </div>
+    </main>
+
+    <script src="../lib/i18n.js"></script>
+    <script src="../lib/store.js"></script>
+    <script src="../lib/friction.js"></script>
+    <script src="blocked.js"></script>
+  </body>
+</html>

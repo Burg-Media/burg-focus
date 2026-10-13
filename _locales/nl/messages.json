@@ -1,0 +1,689 @@
+{
+  "lang": {
+    "message": "nl"
+  },
+  "extName": {
+    "message": "Burg Focus"
+  },
+  "extDescription": {
+    "message": "Blokkeer afleidende sites tijdens focussessies en volgens schema, met tijdsbudget per site en statistieken. Alles lokaal."
+  },
+  "durSec": {
+    "message": "{0} s"
+  },
+  "durMin": {
+    "message": "{0} min"
+  },
+  "durHourMin": {
+    "message": "{0} u {1} min"
+  },
+  "durHours": {
+    "message": "{0} u"
+  },
+  "dayNames": {
+    "message": "zo,ma,di,wo,do,vr,za"
+  },
+  "defaultPhrase": {
+    "message": "ik kies bewust voor afleiding"
+  },
+  "untilTime": {
+    "message": "tot {0}"
+  },
+  "blockedTimes": {
+    "message": "{0}× geblokkeerd"
+  },
+  "today": {
+    "message": "Vandaag"
+  },
+  "madeBy": {
+    "message": "Gemaakt door"
+  },
+  "frictionBreathe": {
+    "message": "Even ademhalen… nog {0} s"
+  },
+  "areYouSure": {
+    "message": "Weet je het zeker?"
+  },
+  "typeOver": {
+    "message": "Typ over:"
+  },
+  "breakMsg": {
+    "message": "Tijd voor een pauze van {0} minuten. Afleidende sites zijn even vrij."
+  },
+  "breakMsgLong": {
+    "message": "Tijd voor een lange pauze van {0} minuten. Afleidende sites zijn even vrij."
+  },
+  "roundDone": {
+    "message": "Ronde {0} klaar"
+  },
+  "breakOver": {
+    "message": "Pauze voorbij"
+  },
+  "roundStarted": {
+    "message": "Ronde {0} van {1} minuten is begonnen."
+  },
+  "readyForRound": {
+    "message": "Klaar voor ronde {0}?"
+  },
+  "startNextRound": {
+    "message": "Start volgende ronde"
+  },
+  "badgeOn": {
+    "message": "aan"
+  },
+  "guardName": {
+    "message": "Cipier Gerrit"
+  },
+  "modeMild": {
+    "message": "Mild"
+  },
+  "modeStrict": {
+    "message": "Streng"
+  },
+  "modeCrazy": {
+    "message": "Gek"
+  },
+  "guardOffCap": {
+    "message": "Uit"
+  },
+  "guardTitleRollCall": {
+    "message": "{0}: appèl!"
+  },
+  "guardTitleCheck": {
+    "message": "{0}: controle!"
+  },
+  "present": {
+    "message": "Present!"
+  },
+  "testLate": {
+    "message": "Te laat! Maar dit was een proefappèl, dus voor deze keer niks."
+  },
+  "testOk": {
+    "message": "Proefappèl geslaagd. Zo wil Gerrit het zien."
+  },
+  "penaltyAdded": {
+    "message": "Je ronde duurt {0} minuten langer."
+  },
+  "nRollCalls1": {
+    "message": "{0} appèl"
+  },
+  "nRollCalls": {
+    "message": "{0} appèls"
+  },
+  "nStrikes1": {
+    "message": "{0} strafpunt"
+  },
+  "nStrikes": {
+    "message": "{0} strafpunten"
+  },
+  "nEscapes1": {
+    "message": "{0} ontsnappingspoging"
+  },
+  "nEscapes": {
+    "message": "{0} ontsnappingspogingen"
+  },
+  "verdictPerfect": {
+    "message": "Voorbeeldig gedrag. Gerrit is bijna trots."
+  },
+  "verdictQuiet": {
+    "message": "Rustige ronde. Verdacht rustig."
+  },
+  "verdictSome": {
+    "message": "Een paar smetjes op je blazoen. Volgende ronde beter."
+  },
+  "verdictBad": {
+    "message": "Dit was geen ronde, dit was een uitbraak. Gerrit is teleurgesteld."
+  },
+  "gAppel1": {
+    "message": "APPÈL! Gevangene {nr}, meld je! Ik tel tot {sec}."
+  },
+  "gAppel2": {
+    "message": "Klop klop. Gerrit hier. Zit je nog te werken, of graaf je weer een tunnel?"
+  },
+  "gAppel3": {
+    "message": "Ik hoorde iets. Was dat een filmpje? Bewijs maar dat je werkt."
+  },
+  "gAppel4": {
+    "message": "Routinecontrole! Handen op het toetsenbord, waar ik ze kan zien!"
+  },
+  "gAppel5": {
+    "message": "Drieëntwintig jaar dienst en nog nooit iemand zien ontsnappen. Jij wordt niet de eerste. Present?"
+  },
+  "gAppel6": {
+    "message": "Gerrit hier. Ik verveel me. Zeg iets. Liefst iets productiefs."
+  },
+  "gAppel7": {
+    "message": "Ze zeggen dat ik paranoïde ben. Ze zeggen ook dat jij aan het werk bent. We gaan het zien."
+  },
+  "gAppel8": {
+    "message": "Celinspectie! Geen smoesjes, geen kattenfilmpjes, geen gedoe."
+  },
+  "gIdle1": {
+    "message": "Gevangene {nr}! Je beweegt al {idle} niet meer. Ontsnapt of in slaap gevallen?"
+  },
+  "gIdle2": {
+    "message": "Het is hier stil… TE stil. Wat ben je aan het uitspoken?"
+  },
+  "gIdle3": {
+    "message": "Geen muis. Geen toetsen. Wel een verdacht lege stoel."
+  },
+  "gIdle4": {
+    "message": "Als je aan het nadenken bent: denk dan wat harder, ik hoor niks."
+  },
+  "gIdle5": {
+    "message": "Ik por even met mijn knuppel. Leef je nog, {nr}?"
+  },
+  "gOffsite1": {
+    "message": "Wat doe jij al {min} minuten op {host}? Dat staat niet op het dagprogramma."
+  },
+  "gOffsite2": {
+    "message": "{host}? Interessant. Dat zet ik in je dossier. Tenzij je nu terug aan het werk gaat."
+  },
+  "gOffsite3": {
+    "message": "Ik ken {host}. Daar begint het altijd mee. Eerst {host}, dan een tunnel onder de douches."
+  },
+  "gOffsite4": {
+    "message": "Gevangene {nr}, {host} is geen werk. Zelfs ik weet dat, en ik werk hier."
+  },
+  "gOk1": {
+    "message": "Hm. Goed dan. Ik hou je in de gaten."
+  },
+  "gOk2": {
+    "message": "Genoteerd. Ga door. En niet naar me knipogen."
+  },
+  "gOk3": {
+    "message": "Keurig. Voor deze keer."
+  },
+  "gOk4": {
+    "message": "Uitstekend gedrag. Misschien krijg je straks een extra boterham."
+  },
+  "gOk5": {
+    "message": "Mooi zo. Gerrit is tevreden. Gerrit is nooit lang tevreden."
+  },
+  "gLate1": {
+    "message": "Te laat! Strafpunt. Dat komt in je dossier."
+  },
+  "gLate2": {
+    "message": "Niks gehoord, dus strafpunt. Gerrit vergeet nooit iets."
+  },
+  "gLate3": {
+    "message": "Wegkijken helpt niet. Strafpunt nummer {strikes}."
+  },
+  "gLate4": {
+    "message": "Stilte is ook een antwoord. Het verkeerde. Strafpunt."
+  },
+  "gWrong1": {
+    "message": "Dat is niet je nummer. Nog een keer, en geen trucjes."
+  },
+  "gWrong2": {
+    "message": "Fout! Ken je je eigen nummer niet eens meer?"
+  },
+  "gEscape1": {
+    "message": "Ontsnappingspoging genoteerd, gevangene {nr}. Terug naar je cel."
+  },
+  "gEscape2": {
+    "message": "Ha! Dacht je dat ik sliep? Gerrit slaapt nooit."
+  },
+  "gEscape3": {
+    "message": "Die deur zit op slot. Alle deuren zitten op slot. Zo werkt een gevangenis."
+  },
+  "gEscape4": {
+    "message": "Ik zag je wel. Ik zie alles. Terug aan het werk."
+  },
+  "gLawyer1": {
+    "message": "Een advocaat? Hier? Hahaha."
+  },
+  "gLawyer2": {
+    "message": "Netjes je hand opsteken als je iets wilt."
+  },
+  "gLawyer3": {
+    "message": "Die knop doet niks. Net als jij, blijkbaar."
+  },
+  "guardPageTitle": {
+    "message": "Cipier Gerrit — Burg Focus"
+  },
+  "prisoner": {
+    "message": "Gevangene"
+  },
+  "typePrisonerNr": {
+    "message": "Typ je gevangenenummer:"
+  },
+  "lawyerBtn": {
+    "message": "Ik wil een advocaat"
+  },
+  "close": {
+    "message": "Sluiten"
+  },
+  "sorryGerrit": {
+    "message": "Sorry, Gerrit"
+  },
+  "guardPatrol": {
+    "message": "Gerrit loopt zijn ronde. Niks aan de hand… nog niet."
+  },
+  "guardCoffee": {
+    "message": "Geen ronde bezig. Gerrit drinkt koffie. Ga maar."
+  },
+  "thisRound": {
+    "message": "Deze ronde: {0}"
+  },
+  "windowClosesIn": {
+    "message": "Venster sluit over {0} s"
+  },
+  "settingsAndStats": {
+    "message": "Instellingen en statistieken"
+  },
+  "duration": {
+    "message": "Duur"
+  },
+  "notePlaceholder": {
+    "message": "Waar ga je aan werken?"
+  },
+  "lockLabel": {
+    "message": "Slot: uitzetten kan pas als de ronde voorbij is"
+  },
+  "guard": {
+    "message": "Bewaker"
+  },
+  "guardOff": {
+    "message": "uit"
+  },
+  "guardOptMild": {
+    "message": "Cipier Gerrit: mild"
+  },
+  "guardOptStrict": {
+    "message": "Cipier Gerrit: streng"
+  },
+  "guardOptCrazy": {
+    "message": "Cipier Gerrit: gek"
+  },
+  "startFocus": {
+    "message": "Focus starten"
+  },
+  "skipBreak": {
+    "message": "Pauze overslaan"
+  },
+  "stop": {
+    "message": "Stoppen"
+  },
+  "followSchedule": {
+    "message": "Schema volgen"
+  },
+  "tempOpen": {
+    "message": "Tijdelijk open"
+  },
+  "nothingMeasured": {
+    "message": "Nog niets gemeten."
+  },
+  "allStats": {
+    "message": "Alle statistieken →"
+  },
+  "pillBreak": {
+    "message": "pauze"
+  },
+  "pillFocus": {
+    "message": "focus"
+  },
+  "pillSchedule": {
+    "message": "schema"
+  },
+  "pillOff": {
+    "message": "uit"
+  },
+  "phaseFocus": {
+    "message": "Focus · ronde {0}"
+  },
+  "phaseBreak": {
+    "message": "Pauze"
+  },
+  "readyForRoundMin": {
+    "message": "Klaar voor ronde {0} van {1} minuten?"
+  },
+  "lockOn": {
+    "message": "slot aan"
+  },
+  "lockStopAfter": {
+    "message": "Slot staat aan: stoppen kan na {0}."
+  },
+  "guardCalling": {
+    "message": "{0} roept je! Meld je →"
+  },
+  "penaltyPerStrike": {
+    "message": "+{0} min per strafpunt"
+  },
+  "noSchedule": {
+    "message": "Nog geen schema ingesteld."
+  },
+  "focusTimeUntil": {
+    "message": "Nu focustijd tot {0}"
+  },
+  "nextFocusTime": {
+    "message": "Volgende focustijd: {0} {1}"
+  },
+  "todayLower": {
+    "message": "vandaag"
+  },
+  "siteAllowed": {
+    "message": "Toegestaan"
+  },
+  "siteAllow": {
+    "message": "Toestaan"
+  },
+  "siteListed": {
+    "message": "Op de blokkeerlijst"
+  },
+  "siteBlock": {
+    "message": "Blokkeren"
+  },
+  "budgetUsed": {
+    "message": "Budget {0}: {1} van {2} min gebruikt"
+  },
+  "blockAgainNow": {
+    "message": "Nu weer blokkeren"
+  },
+  "stopSession": {
+    "message": "Sessie stoppen"
+  },
+  "turnOffSchedule": {
+    "message": "Schema uitzetten"
+  },
+  "blockedPageTitle": {
+    "message": "Even niet — Burg Focus"
+  },
+  "notNow": {
+    "message": "Even niet"
+  },
+  "remaining": {
+    "message": "nog"
+  },
+  "freeAgainIn": {
+    "message": "weer vrij over"
+  },
+  "noteLabel": {
+    "message": "Waar je aan werkte"
+  },
+  "back": {
+    "message": "← Terug"
+  },
+  "goToSite": {
+    "message": "Ga verder naar de site"
+  },
+  "anyway": {
+    "message": "Toch even naar deze site"
+  },
+  "reasonSession": {
+    "message": "Je focussessie loopt nog."
+  },
+  "reasonSchedule": {
+    "message": "Volgens je schema is het nu focustijd."
+  },
+  "reasonBudget": {
+    "message": "Je budget van {0} minuten voor {1} is op voor vandaag."
+  },
+  "lockAnywayAfter": {
+    "message": "Slot staat aan: toch doorgaan kan pas na {0}."
+  },
+  "freeAgain": {
+    "message": "Weer vrij"
+  },
+  "notBlocked": {
+    "message": "Deze site is nu niet (meer) geblokkeerd."
+  },
+  "openFor": {
+    "message": "Open voor {0} minuten"
+  },
+  "settings": {
+    "message": "Instellingen"
+  },
+  "stats": {
+    "message": "Statistieken"
+  },
+  "saved": {
+    "message": "Opgeslagen"
+  },
+  "modeTitle": {
+    "message": "Modus tijdens focus"
+  },
+  "modeBlock": {
+    "message": "Deze sites blokkeren"
+  },
+  "modeBlockDesc": {
+    "message": " — alles op de blokkeerlijst is dicht."
+  },
+  "modeAllow": {
+    "message": "Alleen deze sites toestaan"
+  },
+  "modeAllowDesc": {
+    "message": " — diep werk: alles behalve de toegestane sites is dicht."
+  },
+  "modeHelp1": {
+    "message": "Focus staat aan tijdens een focussessie en, als"
+  },
+  "modeHelp2": {
+    "message": "aan staat, binnen je schema."
+  },
+  "and": {
+    "message": "en"
+  },
+  "or": {
+    "message": "of"
+  },
+  "modeHelp3": {
+    "message": "zijn altijd toegestaan."
+  },
+  "blocklist": {
+    "message": "Blokkeerlijst"
+  },
+  "blocklistHelp": {
+    "message": "Een domein (met subdomeinen) of een pad, bijvoorbeeld"
+  },
+  "allowlistTitle": {
+    "message": "Toegestaan in \"alleen deze sites\""
+  },
+  "allowlistHelp": {
+    "message": "Alleen van belang in de modus"
+  },
+  "workDomains": {
+    "message": "Werkdomeinen"
+  },
+  "workDomainsHelp": {
+    "message": "Altijd toegestaan, in beide modi. Bijvoorbeeld je eigen sites, het klantportaal of de hostingomgeving."
+  },
+  "schedule": {
+    "message": "Schema"
+  },
+  "addTimeSlot": {
+    "message": "+ Tijdvak"
+  },
+  "budgetsTitle": {
+    "message": "Tijdsbudget per site"
+  },
+  "budgetsHelp": {
+    "message": "Altijd actief, ook buiten focustijd. Telt alleen als de tab vooraan staat en je niet stilzit (of de tab geluid maakt). Is het budget op, dan is de site dicht tot middernacht."
+  },
+  "minPerDay": {
+    "message": "min per dag"
+  },
+  "add": {
+    "message": "Toevoegen"
+  },
+  "frictionTitle": {
+    "message": "Drempel om toch te gaan"
+  },
+  "frictionHelp": {
+    "message": "Geldt op de blokkeerpagina (\"toch even naar deze site\"), bij het stoppen van een sessie en bij het uitzetten van het schema tijdens focustijd."
+  },
+  "frictionNone": {
+    "message": "Geen drempel"
+  },
+  "frictionWait": {
+    "message": "Wachten:"
+  },
+  "seconds": {
+    "message": "seconden"
+  },
+  "frictionType": {
+    "message": "Een zin overtypen:"
+  },
+  "graceBefore": {
+    "message": "Daarna is de site"
+  },
+  "graceAfter": {
+    "message": "minuten open."
+  },
+  "lockHint1": {
+    "message": "Wil je echt niet kunnen afhaken: zet bij het starten van een sessie het"
+  },
+  "lockWord": {
+    "message": "slot"
+  },
+  "lockHint2": {
+    "message": "aan. Dan kan stoppen of toch doorgaan pas als de ronde voorbij is."
+  },
+  "focusSessions": {
+    "message": "Focussessies"
+  },
+  "defaultDuration": {
+    "message": "Standaardduur"
+  },
+  "lockDefault": {
+    "message": "Slot standaard aan"
+  },
+  "shortBreak": {
+    "message": "Korte pauze"
+  },
+  "minLongBreak": {
+    "message": "min, lange pauze"
+  },
+  "minAfterEvery": {
+    "message": "min na elke"
+  },
+  "rounds": {
+    "message": "rondes"
+  },
+  "autoNext": {
+    "message": "Na de pauze automatisch een nieuwe ronde starten"
+  },
+  "guardTitle": {
+    "message": "Bewaker: Cipier Gerrit"
+  },
+  "guardHelp": {
+    "message": "Tijdens de focusfase van een sessie controleert Gerrit of je nog bezig bent. Hij roept je in een eigen venster en met een melding; meld je binnen de tijd, anders krijg je een strafpunt. Werk je in een andere app (je editor), dan telt dat gewoon als bezig."
+  },
+  "guardOffDesc": {
+    "message": " — Gerrit heeft vrij."
+  },
+  "guardMildDesc": {
+    "message": " — alleen als je 5 minuten niets doet. 90 seconden om je te melden."
+  },
+  "guardStrictDesc": {
+    "message": " — na 3 minuten stilzitten, 10 minuten op een niet-werksite, en een appèl om de 15 à 30 minuten. 60 seconden."
+  },
+  "guardCrazyDesc": {
+    "message": " — na 90 seconden stilzitten, 5 minuten op een niet-werksite, en een appèl om de 6 à 14 minuten. 30 seconden, en je moet je gevangenenummer overtypen."
+  },
+  "guardNote1": {
+    "message": "\"Niet-werksite\" werkt alleen als je hierboven"
+  },
+  "workDomainsLower": {
+    "message": "werkdomeinen"
+  },
+  "guardNote2": {
+    "message": "hebt ingevuld. Een tab die geluid maakt telt niet als stilzitten. Op de blokkeerpagina noteert Gerrit elke ontsnappingspoging."
+  },
+  "guardSound": {
+    "message": "Fluitje bij een appèl"
+  },
+  "guardPenalty": {
+    "message": "Strafminuten: elk strafpunt maakt de ronde 2 minuten langer"
+  },
+  "testRollCall": {
+    "message": "Proefappèl"
+  },
+  "doesntCount": {
+    "message": "telt niet mee"
+  },
+  "other": {
+    "message": "Overig"
+  },
+  "tracking": {
+    "message": "Tijd per site bijhouden voor de statistieken (budgetten worden altijd gemeten)"
+  },
+  "noteOnBlockPage": {
+    "message": "Notitie op de blokkeerpagina als er geen sessie loopt"
+  },
+  "notePh": {
+    "message": "Bijv. eerst de offerte afmaken"
+  },
+  "remove": {
+    "message": "Verwijderen"
+  },
+  "empty": {
+    "message": "Nog leeg"
+  },
+  "egBlock": {
+    "message": "bijv. youtube.com/shorts"
+  },
+  "egAllow": {
+    "message": "bijv. github.com"
+  },
+  "invalidDomain": {
+    "message": "Geen geldig domein: {0}"
+  },
+  "to": {
+    "message": "tot"
+  },
+  "todayUsed": {
+    "message": "vandaag {0}"
+  },
+  "lockBanner": {
+    "message": "Slot staat aan tot {0}. Tot dan kun je de blokkeerlijst alleen aanvullen."
+  },
+  "period": {
+    "message": "Periode"
+  },
+  "days7": {
+    "message": "7 dagen"
+  },
+  "days30": {
+    "message": "30 dagen"
+  },
+  "days90": {
+    "message": "90 dagen"
+  },
+  "timeInBrowser": {
+    "message": "Tijd in de browser"
+  },
+  "avgPerDay": {
+    "message": "Gemiddeld per dag"
+  },
+  "blocked": {
+    "message": "Geblokkeerd"
+  },
+  "strikesCalls": {
+    "message": "Strafpunten / appèls (Gerrit)"
+  },
+  "timePerDay": {
+    "message": "Tijd per dag"
+  },
+  "perSite": {
+    "message": "Per site"
+  },
+  "site": {
+    "message": "Site"
+  },
+  "time": {
+    "message": "Tijd"
+  },
+  "nothingInPeriod": {
+    "message": "Nog niets gemeten in deze periode."
+  },
+  "statsFooter": {
+    "message": "Alles staat alleen in deze browser en wordt na 90 dagen opgeruimd."
+  },
+  "clearStats": {
+    "message": "Statistieken wissen"
+  },
+  "confirmClear": {
+    "message": "Zeker weten? Klik nog een keer"
+  }
+}

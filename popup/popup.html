@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Burg Focus</title>
+    <link rel="stylesheet" href="../lib/ui.css" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../images/icon_48.png" alt="" width="24" height="24" />
+      <strong>Burg Focus</strong>
+      <span class="pill" id="pill"></span>
+      <button class="icon-btn" id="open-options" data-i18n-title="settingsAndStats">⚙</button>
+    </header>
+
+    <!-- No session -->
+    <section class="card" id="start-view" hidden>
+      <div class="durations" id="durations" role="radiogroup" data-i18n-aria-label="duration">
+        <button type="button" data-min="25">25 min</button>
+        <button type="button" data-min="50">50 min</button>
+        <button type="button" data-min="90">90 min</button>
+      </div>
+      <input id="note" type="text" maxlength="300" data-i18n-placeholder="notePlaceholder" />
+      <label class="check small"><input type="checkbox" id="lock" /> <span data-i18n="lockLabel"></span></label>
+      <label class="guard-pick small"><span data-i18n="guard"></span>
+        <select id="guard-mode">
+          <option value="off" data-i18n="guardOff"></option>
+          <option value="mild" data-i18n="guardOptMild"></option>
+          <option value="streng" data-i18n="guardOptStrict"></option>
+          <option value="gek" data-i18n="guardOptCrazy"></option>
+        </select>
+      </label>
+      <button class="btn primary wide" id="start" type="button" data-i18n="startFocus"></button>
+    </section>
+
+    <!-- Session running -->
+    <section class="card" id="session-view" hidden>
+      <div class="phase" id="phase"></div>
+      <div class="clock" id="clock"></div>
+      <div class="muted small" id="session-meta"></div>
+      <p class="session-note" id="session-note" hidden></p>
+      <button class="guard-line small" id="guard-line" type="button" hidden></button>
+      <div class="row">
+        <button class="btn primary" id="next" type="button" hidden data-i18n="startNextRound"></button>
+        <button class="btn" id="skip" type="button" hidden data-i18n="skipBreak"></button>
+        <button class="btn danger" id="stop" type="button" data-i18n="stop"></button>
+      </div>
+      <p class="muted small" id="lock-msg" hidden></p>
+      <div class="friction" id="stop-friction" hidden></div>
+    </section>
+
+    <section class="block">
+      <label class="check"><input type="checkbox" id="schedules-on" /> <span data-i18n="followSchedule"></span></label>
+      <span class="muted small" id="schedule-status"></span>
+      <div class="friction" id="schedule-friction" hidden></div>
+    </section>
+
+    <section class="block" id="site-box" hidden>
+      <div class="site-row">
+        <span class="site" id="site"></span>
+        <button class="btn small-btn" id="site-action" type="button"></button>
+      </div>
+      <div id="site-budget" hidden>
+        <div class="bar" id="site-budget-bar"><span></span></div>
+        <span class="muted small" id="site-budget-text"></span>
+      </div>
+    </section>
+
+    <section class="block" id="exceptions-box" hidden>
+      <div class="lbl" data-i18n="tempOpen"></div>
+      <ul class="plain" id="exceptions"></ul>
+    </section>
+
+    <section class="block">
+      <div class="today-head">
+        <span class="lbl" data-i18n="today"></span>
+        <span class="muted small" id="today-total"></span>
+      </div>
+      <ul class="top" id="top"></ul>
+      <div class="muted small" id="top-empty" hidden data-i18n="nothingMeasured"></div>
+      <button class="link small" id="open-stats" type="button" data-i18n="allStats"></button>
+    </section>
+
+    <p class="made-by"><span data-i18n="madeBy"></span> <a href="https://burgmedia.eu/?utm_source=burg-focus&amp;utm_medium=extension&amp;utm_campaign=popup" target="_blank" rel="noopener">Burg Media</a></p>
+
+    <script src="../lib/i18n.js"></script>
+    <script src="../lib/store.js"></script>
+    <script src="../lib/rules.js"></script>
+    <script src="../lib/friction.js"></script>
+    <script src="../lib/guard.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
